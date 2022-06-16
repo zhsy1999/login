@@ -1,0 +1,149 @@
+@import '~antd/es/style/themes/default.less';
+
+.main {
+  width: 370px;
+  background-color: #fff;
+  padding: 5px 20px 5px 20px;
+  margin: 0 auto auto auto;
+  border-radius: 8px;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: @text-color-secondary;
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+  .submit {
+    width: 100%;
+    margin-top: 24px;
+    :global {
+      // .antd-pro-login-submit {
+      //   width: 100%;
+      //   margin-top: 24px;
+      // }
+      .framework-btn-primary{
+        height:36px;
+        // background:rgba(30,102,169,1);
+        // box-shadow:0px 2px 8px 0px rgba(30,102,169,1);
+        border-radius:4px;
+        font-size:18px;
+        font-family:PingFangSC;
+        font-weight:400;
+        // color:rgba(255,255,255,1);
+    }
+  }
+
+
+  .framework-btn-default{
+    width: 110px;
+  }
+  }
+}
+
+.top {
+  margin-top: 35%;
+  text-align: center;
+}
+
+.header {
+  margin-top: 10px;
+  height: 44px;
+  line-height: 44px;
+  margin-bottom: 50px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo {
+  // height: 44px;
+  margin-right: 16px;
+  vertical-align: top;
+}
+
+.title {
+  position: relative;
+  top: 2px;
+  color: @heading-color;
+  font-weight: 600;
+  font-size: 33px;
+  font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+.codeBtn{
+  width: 112px;
+  color: #6D7685;
+  background-color:#E8EAF0;
+  border: #E8EAF0;
+}
+.codeBtn:hover{
+  width: 112px;
+  background-color:#E8EAF0;
+  color: #6D7685;
+  border:#E8EAF0;
+}
+.codeBtn:focus{
+  width: 112px;
+  background-color:#E8EAF0;
+  color: #6D7685;
+  border: #E8EAF0;
+}
+.codeBtn:disabled{
+  background-color:  rgba(12, 111, 255, 0.5);
+  color: #fff;
+  border: rgba(12, 111, 255, 0.5);
+  width: 112px;
+}
+.codeBtn:disabled:hover{
+  background-color:  rgba(12, 111, 255, 0.5);
+  color: #fff;
+  border: rgba(12, 111, 255, 0.5);
+  width: 112px;
+}
+
+.loginType{
+  :global{
+    .framework-tooltip-content .framework-tooltip-inner {
+      color: #F98B16;
+      font-size: 12px;
+      border: 1px #F98B16 solid;
+  }
+  .framework-tooltip-arrow-content{
+    border: 1px #F98B16 solid;
+  }
+  .framework-tooltip-arrow:before {
+      border: 1px #F98B16 solid;
+  }
+
+  }
+}
+.footer{
+  text-align: center;
+  background: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: rgba(0, 0, 0, 0.55);
+}
+
+
+
