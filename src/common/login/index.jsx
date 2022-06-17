@@ -1,7 +1,7 @@
 import React from 'react'
 import { Form, Input, Button, Layout } from 'antd';
 import 'antd/dist/antd.css';
-import './index.less';
+import './index.css';
 
 export default function Login() {
 
@@ -9,15 +9,15 @@ export default function Login() {
   const FormItem = Form.Item;
 
   return (
-    <div>
-      <div className={"main"}>
-        <div className={"top"}>
+    <div className="background">
+      <div className="main">
+        <div className="top">
           <div className={"header"}>
             {/* <img alt="logo" className={styles.logo} src={logo} /> */}
             <span className={"title"}>CBOS后台管理</span>
           </div>
         </div>
-        <Form>
+        <Form className="form">
         {/* <Form onFinish={getCode} ref={formRef}> */}
           <FormItem name="username" rules={[{ required: true, message: "请输入用户名！" }]}>
             <Input  style={{height:"50px"}} placeholder="请输入用户名" />
@@ -76,10 +76,11 @@ export default function Login() {
 
           </FormItem> */}
         </Form>
-      </div>
-      <Footer className={"footer"}>
+        <span className={"footer"}>
           © 2009-现在 阿里云计算有限公司。版权所有
-      </Footer>
+        </span>
+      </div>
+
     </div>
   )
 }
